@@ -11,7 +11,7 @@ The system demonstrates full-stack development skills, including backend API cre
 
 Watch the full system demonstration:
 
-https://github.com/user-attachments/assets/ai-powered-product-recommendation.mp4
+https://github.com/Muddapuakash/AI-Powered-Product-Recommendation-Engine/blob/main/ai%20powered%20product%20recommendation%20(1)%20(1).mp4
 
 *The demo shows the complete user flow from setting preferences to receiving AI-powered recommendations with explanations.*
 
