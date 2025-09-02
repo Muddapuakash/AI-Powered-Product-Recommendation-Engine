@@ -1,0 +1,155 @@
+.catalog-container {
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.catalog-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.view-options button,
+.compare-toggle {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #f3f4f6;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.view-options button.active,
+.compare-toggle.active {
+  background: #3b82f6;
+  color: white;
+}
+
+.sort-controls select {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.catalog-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.view-grid {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.view-list {
+  grid-template-columns: 1fr;
+}
+
+.view-compact {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.catalog-card {
+  position: relative;
+  padding: 1rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.catalog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.product-badges {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.product-badge {
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.badge-new { background: #10b981; }
+.badge-sale { background: #ef4444; }
+.badge-popular { background: #f59e0b; }
+.badge-premium { background: #8b5cf6; }
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-info {
+  margin-bottom: 0.5rem;
+}
+
+.product-name { font-weight: 600; margin-bottom: 0.2rem; }
+.product-brand { font-size: 0.85rem; color: #6b7280; margin-bottom: 0.3rem; }
+
+.product-rating { display: flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; }
+.star { color: #d1d5db; }
+.star.filled { color: #facc15; }
+.star.half { color: #fbbf24; }
+.rating-count { color: #6b7280; font-size: 0.75rem; }
+
+.product-pricing { margin-top: auto; display: flex; gap: 0.5rem; align-items: baseline; }
+.product-price { font-weight: 700; color: #111827; }
+.product-original-price { text-decoration: line-through; color: #9ca3af; font-size: 0.85rem; }
+
+.product-actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 0.4rem;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #f3f4f6;
+  transition: all 0.2s;
+}
+
+.action-btn:hover { background: #e5e7eb; }
+
+.action-btn.favorited { background: #ef4444; color: white; }
+.action-btn.selected { background: #3b82f6; color: white; }
+
+.compare-checkbox {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  width: 20px;
+  height: 20px;
+}
+
+.skeleton-card {
+  height: 150px;
+  background: #f3f4f6;
+  border-radius: 16px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { background-color: #f3f4f6; }
+  50% { background-color: #e5e7eb; }
+  100% { background-color: #f3f4f6; }
+}

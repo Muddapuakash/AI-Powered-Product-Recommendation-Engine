@@ -1,0 +1,105 @@
+.preferences-container {
+  background: #f0f3f7;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 15px rgba(0,0,0,0.05), -6px -6px 15px rgba(255,255,255,0.7);
+  max-width: 500px;
+  margin: auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.preferences-container h3 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.preference-group {
+  margin-bottom: 20px;
+}
+
+.preference-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+/* Price range slider */
+.price-range {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 8px;
+  border-radius: 5px;
+  background: #e5e7eb;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.price-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3b82f6;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+.price-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3b82f6;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+/* Checkbox group */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.toggle-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.toggle-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggle-checkbox span {
+  padding: 5px 12px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  background: #f0f3f7;
+  transition: all 0.2s;
+}
+
+.toggle-checkbox input:checked + span {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .preferences-container {
+    padding: 15px;
+  }
+  .checkbox-group {
+    flex-direction: column;
+  }
+}
