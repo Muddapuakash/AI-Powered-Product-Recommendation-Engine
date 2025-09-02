@@ -147,11 +147,11 @@ Include explanations and return ONLY a JSON array with the format:
 
 | Component | Time Spent |
 |-----------|------------|
-| Backend API & LLM Integration | 15 hours |
-| Frontend Components & React State Management | 12 hours |
-| Prompt Engineering & Testing | 8 hours |
+| Backend API & LLM Integration | 5 hours |
+| Frontend Components & React State Management | 4 hours |
+| Prompt Engineering & Testing | 4 hours |
 | Documentation & Repository Setup | 3 hours |
-| **Total Development Time** | **~38 hours** |
+| **Total Development Time** | **~20 hours** |
 
 ### API Endpoints
 
