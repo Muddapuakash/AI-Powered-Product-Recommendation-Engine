@@ -7,6 +7,14 @@ This project is an AI-powered product recommendation system that provides person
 
 The system demonstrates full-stack development skills, including backend API creation, LLM integration, and a responsive React frontend. This project showcases the integration of modern AI capabilities into practical eCommerce applications.
 
+### 🎥 Demo Video
+
+Watch the full system demonstration:
+
+https://github.com/user-attachments/assets/ai-powered-product-recommendation.mp4
+
+*The demo shows the complete user flow from setting preferences to receiving AI-powered recommendations with explanations.*
+
 ### Project Architecture
 
 ```
@@ -149,7 +157,7 @@ Include explanations and return ONLY a JSON array with the format:
 |-----------|------------|
 | Backend API & LLM Integration | 5 hours |
 | Frontend Components & React State Management | 4 hours |
-| Prompt Engineering & Testing | 4 hours |
+| Prompt Engineering & Testing | 3 hours |
 | Documentation & Repository Setup | 3 hours |
 | **Total Development Time** | **~20 hours** |
 
